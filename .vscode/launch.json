@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(LLDB)Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/ffmpeg",
+            "args": ["-i","/home/guoweijie004/VID_20191005_150211.mp4","-ss","4", "-f","image2", "-r", "1", "-t", "1", "-s", "256x256", "a.png"],
+
+        }
+    ]
+
+    
+}
