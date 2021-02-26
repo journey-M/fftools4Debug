@@ -4887,14 +4887,13 @@ int main(int argc, char **argv)
     int i, ret;
     BenchmarkTimeStamps ti;
 
-    init_dynload();
-
     register_exit(ffmpeg_cleanup);
 
     setvbuf(stderr,NULL,_IONBF,0); /* win32 runtime needs this */
 
-    av_log_set_flags(AV_LOG_SKIP_REPEATED);
-    parse_loglevel(argc, argv, options);
+//    av_log_set_flags(AV_LOG_SKIP_REPEATED);
+
+//    parse_loglevel(argc, argv, options);
 
     if(argc>1 && !strcmp(argv[1], "-d")){
         run_as_daemon=1;

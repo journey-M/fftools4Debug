@@ -27,7 +27,7 @@ target_link_libraries(ffmpeg PUBLIC m pthread avcodec avutil avformat avfilter s
 
 add_executable(ffplay ffplay.c)
 
-target_link_libraries(ffplay PUBLIC SDL2 m pthread avcodec avutil avformat avfilter swresample swscale cmdutils)
+target_link_libraries(ffplay PUBLIC cmdutils SDL2 m pthread avcodec avutil avformat avfilter swresample swscale )
 
 add_executable(ffprobe ffprobe.c)
 target_link_libraries(ffprobe PUBLIC m pthread avcodec avutil avformat avfilter swresample swscale cmdutils)
